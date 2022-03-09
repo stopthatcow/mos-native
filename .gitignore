@@ -2,6 +2,7 @@
 /mongoose-os
 /vfs-fs-lfs
 /vfs-fs-spiffs
-env.sh
+mos_build_local.sh
 uninstall.sh
 .DS_Store
+
