@@ -8,22 +8,16 @@ $ git clone https://github.com/v-kiniv/mos-native.git
 $ cd mos-native
 $ ./install.sh
 ```
+The installer downloads the esp-idf to the `CWD`and installs the compiler to `~/.espressif/`.
 
-## use
-Temporary for terminal session
+It generates a build tool script called `mos_build_local.sh` that you can use to build locally.
+
+To build, use the generated shell script `mos_build_local.sh`
 ```bash
-$ . /<fullpath-to>/mos-native/env.sh
+mos_build_local.sh --platform esp32
 ```
 
-Permanent, add to ~/.zshrc:
-```bash
-$ echo ". /<fullpath-to>/mos-native/env.sh"
-```
-
-After env.sh was loaded, build app as usual:
-```bash
-mos build --platform esp32 --local
-```
+You will likely want to make a symlink to this file somewhere on your path or add an alias in your .bashrc/.zshrc file.
 
 ## uninstall
 ```bash
