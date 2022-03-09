@@ -4,9 +4,9 @@ Installer script to download, build and install all dependencies needed for [mos
 
 ## install
 ```bash
-$ git clone https://github.com/stopthatcow/mos-native.git
-$ cd mos-native
-$ ./install.sh
+git clone https://github.com/stopthatcow/mos-native.git
+cd mos-native
+./install.sh
 ```
 The installer downloads the esp-idf to the current directory and installs the compiler to `~/.espressif/`.
 Because the IDF uses its own virtual environment for python that we don't want to keep activated all the time, we generate a helper script to activate this environment before invoking `mos`.
