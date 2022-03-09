@@ -1,10 +1,10 @@
 # mos-native
 
-Installer script to download, build and install all dependencies needed for [mos tool](https://github.com/mongoose-os/mos) to build Mongoose OS apps for ESP32 without docker.
+Installer script to download, build and install all dependencies needed for [mos tool](https://github.com/mongoose-os/mos) to build Mongoose OS apps for ESP32 without docker. Docker on Mac is painfully slow and builds can take many minutes this approach lets us build naitively on OS X.
 
 ## install
 ```bash
-$ git clone https://github.com/v-kiniv/mos-native.git
+$ git clone https://github.com/stopthatcow/mos-native.git
 $ cd mos-native
 $ ./install.sh
 ```
