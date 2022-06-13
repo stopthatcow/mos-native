@@ -64,8 +64,8 @@ export CPPFLAGS=\"\$CPPFLAGS -Wno-error\"\
 
 # Build with mos, forwarding args.
 mos build --local \${@:1}
-" > mos_build_local.sh
-chmod 755 mos_build_local.sh
+" > mos_naitive
+chmod 755 mos_naitive
 
 # Create uninstall script
 echo "\
