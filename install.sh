@@ -39,7 +39,7 @@ rm -rf $INSTALL_PATH/vfs-fs-lfs
 echo $'\e[36mIntalling SPIFFS tools...\e[0m'
 rm -rf $INSTALL_PATH/vfs-fs-spiffs
 git clone --depth=1 https://github.com/mongoose-os-libs/vfs-fs-spiffs
-make -C $INSTALL_PATH/vfs-fs-spiffs/tools mkspiffs mkspiffs8 FROZEN_PATH=$INSTALL_PATH/mongoose-os/src/frozen SPIFFS_CONFIG_PATH=$INSTALL_PATH/vfs-fs-spiffs/include/esp32
+make -C $INSTALL_PATH/vfs-fs-spiffs/tools mkspiffs mkspiffs8 FROZEN_PATH=$INSTALL_PATH/mongoose-os/src/frozen SPIFFS_CONFIG_PATH=$INSTALL_PATH/vfs-fs-spiffs/include/esp32xx
 cp $INSTALL_PATH/vfs-fs-spiffs/tools/mkspiffs $INSTALL_PATH/vfs-fs-spiffs/tools/mkspiffs8 /usr/local/bin
 rm -rf $INSTALL_PATH/vfs-fs-spiffs
 rm -rf $INSTALL_PATH/mongoose-os
