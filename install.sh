@@ -63,7 +63,7 @@ export CPPFLAGS=\"\$CPPFLAGS -Wno-error\"\
 . \"$IDF_PYTHON_ENV_ACTIVATE\"
 
 # Build with mos, forwarding args.
-/usr/local/bin/mos \${@:1} | grep -v "<command-line>:"; ( exit ${PIPESTATUS[0]} )
+/usr/local/bin/mos \${@:1} | grep -v \"<command-line>:\"; ( exit \${PIPESTATUS[0]} )
 " > mos_naitive
 chmod 755 mos_naitive
 
